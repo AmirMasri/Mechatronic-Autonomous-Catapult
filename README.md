@@ -37,4 +37,13 @@ The x-coordinate will determine the rotation of the robot while the y-coordinate
 
 The targeting software interface utilises the Tkinter library to create a window with interactable buttons and a grid of coordinates. The size of the grid can be configured in the settings file and the window can be resized using the util file. The targeting interface is shown below
 
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/TargetingWindow.png">
+ <source media="(prefers-color-scheme: light)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/TargetingWindow.png">
+ <img alt="YOUR-ALT-TEXT" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/TargetingWindow.png">
+</picture>
+
+The user will select the intended target coordinates and the program will transfer the coordinates to the Arduino microcontroller through serial communications
+
+
 
