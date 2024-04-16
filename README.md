@@ -45,10 +45,16 @@ The util.py file is used to configure the coordinate grid which allows the user 
 ## Running the Program
 
 Before running the targeting software program, ensure all of these points have been done:
-1. Ensure the SerialCom.py is downloaded and placed in the same filepath as the TargetCode.py file as it is required to establish serial communications with the Arduino microcontroller.
-2. Ensure the Arduino Uno is connected to the computer through USB.
-3. The serial port that is specified in the SerialCom.py file is COM3, change this setting to the serial port being used. This can be easily identified on the Arduino IDE as it displays the COM port the Arduino Microcontroller is connected to.
-4. Install all required libraries that are prompted on the respective IDEs used.
-5. Run the targeting software program and a window should appear!
+1. Download the following files:
+   - NewFSM.ino
+   - TargetCode.py
+   - SerialCom.py
+   - settings.py
+   - util.py
+2. Ensure the SerialCom.py is downloaded and placed in the same filepath as the TargetCode.py file as it is required to establish serial communications with the Arduino microcontroller.
+3. Ensure the Arduino Uno is connected to the computer through USB.
+4. The serial port that is specified in the SerialCom.py file is COM3, change this setting to the serial port being used. This can be easily identified on the Arduino IDE as it displays the COM port the Arduino Microcontroller is connected to.
+5. Install all required libraries that are prompted on the respective IDEs used.
+6. Run the TargetCode.py program and a window should appear!
 
-If the NewFSM.ino file needs to be updated, ensure the targeting window is closed before uploading the updated code to the Arduino Uno Microcontroller as the serial communication from the TargetCode.py program will interfere with the serial communication.
+If the NewFSM.ino file needs to be updated, ensure the targeting window is closed before uploading the updated code to the Arduino Uno Microcontroller as the serial communication from the TargetCode.py program will interfere with the serial communications.
