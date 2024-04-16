@@ -17,6 +17,13 @@ The firmware requires a few basic libraries readily available to install through
  <img alt="Libraries for Firmware" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
 </picture>
 
-For the targeting software, it is dependent on the Tkinter Library
+For the targeting software, it is dependent on the Tkinter Library and other utility files.
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png">
+ <source media="(prefers-color-scheme: light)" srcset="(https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png)">
+ <img alt="Shows a list of libraries to be installed" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png">
+</picture>
 
+## Code Functions and Operations
+The firmware implements a Finite State Machine (FSM) that will go through a flow of operations. It begins with setting a serial communication line with the targeting software to obtain the coordinates of the intended target. Then, it will conduct its shooting operation. The figure below shows the intended flow of operation of the robot.
 
