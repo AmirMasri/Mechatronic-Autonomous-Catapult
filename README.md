@@ -10,8 +10,13 @@ This robot runs on an Arduino Uno microcontroller. Hence, the firmware was devel
 The software for the targeting interface was developed using the Python Programming Language. Any suitable IDE or terminal can be used to execute the program.
 
 ## Installation
-The firmware requires a few basic libraries readily available to install through the Arduino IDE.<br><br>
-#include <string.h><br>
-#include <stdio.h><br>
-#include <Servo.h><br>
-#include <Arduino.h><br>
+The firmware requires a few basic libraries readily available to install through the Arduino IDE.
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
+ <source media="(prefers-color-scheme: light)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
+ <img alt="Libraries for Firmware" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
+</picture>
+
+For the targeting software, it is dependent on the Tkinter Library
+
+
