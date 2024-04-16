@@ -27,3 +27,14 @@ For the targeting software, it is dependent on the Tkinter Library and other uti
 ## Code Functions and Operations
 The firmware implements a Finite State Machine (FSM) that will go through a flow of operations. It begins with setting a serial communication line with the targeting software to obtain the coordinates of the intended target. Then, it will conduct its shooting operation. The figure below shows the intended flow of operation of the robot.
 
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/Coordinate%20Selection%20(1).png">
+ <source media="(prefers-color-scheme: light)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/Coordinate%20Selection%20(1).png">
+ <img alt="Shows the Flow Diagram of the FSM" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/Coordinate%20Selection%20(1).png">
+</picture>
+
+The x-coordinate will determine the rotation of the robot while the y-coordinate will determine the shot power. The rotation and power can be tuned manually by the user.
+
+The targeting software interface utilises the Tkinter library to create a window with interactable buttons and a grid of coordinates. The size of the grid can be configured in the settings file and the window can be resized using the util file. The targeting interface is shown below
+
+
