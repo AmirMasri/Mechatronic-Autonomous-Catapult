@@ -36,9 +36,17 @@ The targeting software interface utilises the Tkinter library to create a window
 The user will select the intended target coordinates and the program will transfer the coordinates to the Arduino microcontroller through serial communications after the confirmation button is pressed. 
 
 ## Settings
-Different configuration files are provided to the user to customize the targeting window. The settings.c file enables the user to resize the window and add additional visual elements to the window
+Different configuration files are provided to the user to customize the targeting window. The settings.py file enables the user to resize the window and add additional visual elements to the window
 
-The util.c file is used to configure the coordinate grid which allows the user to increase the x-coordinates and y-coordinate range covered by the project. Note that by adding new coordinates, manual tuning of the movement of the robot needs to be done through the NewFSM.ino file.
+The util.py file is used to configure the coordinate grid which allows the user to increase the x-coordinates and y-coordinate range covered by the project. Note that by adding new coordinates, manual tuning of the movement of the robot needs to be done through the NewFSM.ino file.
 
+## Running the Program
 
+Before running the targeting software program, ensure all of these points have been done:
+1. Ensure the SerialCom.py is downloaded and placed in the same filepath as the TargetCode.py file as it is required to establish serial communications with the Arduino microcontroller.
+2. Ensure the Arduino Uno is connected to the computer through USB.
+3. The serial port that is specified in the SerialCom.py file is COM3, change this setting to the serial port being used. This can be easily identified on the Arduino IDE as it displays the COM port the Arduino Microcontroller is connected to.
+4. Install all required libraries that are prompted on the respective IDEs used.
+5. Run the targeting software program and a window should appear!
 
+If the NewFSM.ino file needs to be updated, ensure the targeting window is closed before uploading the updated code to the Arduino Uno Microcontroller as the serial communication from the TargetCode.py program will interfere with the serial communication.
