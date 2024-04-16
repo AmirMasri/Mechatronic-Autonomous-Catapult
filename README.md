@@ -10,19 +10,9 @@ This robot runs on an Arduino Uno microcontroller. Hence, the firmware was devel
 The software for the targeting interface was developed using the Python Programming Language. Any suitable IDE or terminal can be used to execute the program.
 
 ## Installation
-The firmware requires a few basic libraries readily available to install through the Arduino IDE.
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
- <source media="(prefers-color-scheme: light)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
- <img alt="Libraries for Firmware" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/FSMLibraries.png">
-</picture>
-
 For the targeting software, it is dependent on the Tkinter Library and other utility files.
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png">
- <source media="(prefers-color-scheme: light)" srcset="(https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png)">
- <img alt="Shows a list of libraries to be installed" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/SoftwareLibraries.png">
-</picture>
+Before running the targeting software program, ensure Tkinter is installed on the system.<br>
+`pip install tk`
 
 ## Code Functions and Operations
 The firmware implements a Finite State Machine (FSM) that will go through a flow of operations. It begins with setting a serial communication line with the targeting software to obtain the coordinates of the intended target. Then, it will conduct its shooting operation. The figure below shows the intended flow of operation of the robot.
@@ -43,7 +33,12 @@ The targeting software interface utilises the Tkinter library to create a window
  <img alt="YOUR-ALT-TEXT" src="https://github.com/AmirMasri/Mini-Autonamous-Catapult/blob/main/TargetingWindow.png">
 </picture>
 
-The user will select the intended target coordinates and the program will transfer the coordinates to the Arduino microcontroller through serial communications
+The user will select the intended target coordinates and the program will transfer the coordinates to the Arduino microcontroller through serial communications after the confirmation button is pressed. 
+
+## Settings
+Different configuration files are provided to the user to customize the targeting window. The settings.c file enables the user to resize the window and add additional visual elements to the window
+
+The util.c file is used to configure the coordinate grid which allows the user to increase the x-coordinates and y-coordinate range covered by the project. Note that by adding new coordinates, manual tuning of the movement of the robot needs to be done through the NewFSM.ino file.
 
 
 
